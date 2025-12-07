@@ -1,5 +1,5 @@
 import "./App.css";
-import HeroSection from "./component/heroSection";
+import HeroSection from "./component/HeroSection" ;
 
 import Home from './component/Home';
 const App = () => {
@@ -7,6 +7,7 @@ const App = () => {
     <div>
       <Home />
       <HeroSection />
+      
     </div>
   );
 };
