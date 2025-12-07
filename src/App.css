@@ -1,0 +1,68 @@
+
+:root{
+  --red: #d61c28;
+  --gray: #2e2e2e;
+}
+*{
+  margin: 0;
+}
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+  margin: 0;
+  max-width: 1280px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+}
+nav ul{
+ display: flex;
+ list-style: none;
+ gap: 24px;
+}
+button{
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  height: calc(100vh-72px);
+}
+
+.hero h1{
+  font-weight: 800;
+  line-height: 102px;
+  font-size:108px;
+}
+
+.hero p{
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.hero-btn{
+  display: flex;
+  gap: 40px;
+}
+.sec-btn{
+  background-color: transparent;
+  color: var(--gray);
+  border: 1px solid var(--gray);
+}
+
+.shopping p{
+font-size: 14px;
+margin-bottom: 8px;
+}
+
