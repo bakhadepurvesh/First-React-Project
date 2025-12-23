@@ -3,11 +3,14 @@
   --red: #d61c28;
   --gray: #2e2e2e;
 }
+
 *{
   margin: 0;
 }
+
 body{
   font-family: Georgia, 'Times New Roman', Times, serif;
+  height: auto; 
 }
 .container{
   margin: 0;
@@ -20,11 +23,24 @@ nav{
   height: 72px;
   align-items: center;
 }
+
+/* ul tag */
 nav ul{
- display: flex;
- list-style: none;
- gap: 24px;
+  display:flex;
+  gap:50px;
+  list-style:none}
+
+nav ul li a{
+  text-decoration:none;
+  color:#131212e8;
+  border-bottom:2px solid transparent;
 }
+
+nav ul li a:hover{
+  border-bottom:3px solid rgb(194, 15, 15);
+}
+
+/* button */
 button{
   all: unset;
   padding: 6px 16px;
@@ -37,7 +53,7 @@ button{
 .hero{
   display: flex;
   align-items: center;
-  height: calc(100vh-72px);
+  height: calc(100vh - 72px);
 }
 
 .hero h1{
@@ -47,7 +63,7 @@ button{
 }
 
 .hero p{
-  font-weight: 600;
+  font-weight:600;
   color: var(--gray);
 }
 
@@ -66,3 +82,78 @@ font-size: 14px;
 margin-bottom: 8px;
 }
 
+/* ************************************************************************************ */
+/* Login page Css */
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #eef2f7, #fbfdff);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Login container */
+.login-container {
+  width: 320px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  text-align: center;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 30px rgba(238, 28, 28, 0.15);
+  transition: border 0.4s ease, transform 0.3s ease;
+}
+
+/* Border animation on hover */
+.login-container:hover {
+  border: 2px solid royalblue;
+  transform: translateY(-4px);
+}
+
+/* Heading */
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input box center & animation */
+.input-box {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus animation */
+.input-box:focus {
+  border-color: royalblue;
+  box-shadow: 0 0 6px rgba(65, 105, 225, 0.5);
+}
+
+/* Login button */
+.login-btn {
+  width: 90%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: rgb(4, 8, 230);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover animation */
+.login-btn:hover {
+  background-color: #1e4fd1;
+  transform: scale(1.02);
+}
