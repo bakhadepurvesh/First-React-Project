@@ -1,93 +1,175 @@
-
-:root{
+:root {
   --red: #d61c28;
   --gray: #2e2e2e;
 }
 
-*{
+/* =======================
+   Global Reset
+======================= */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  height: auto; 
-}
-.container{
-  margin: 0;
-  max-width: 1280px;
+  background-color: #fff;
+  color: #222;
 }
 
-nav{
+/* =======================
+   Container
+======================= */
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+/* =======================
+   Navbar
+======================= */
+nav {
   display: flex;
   justify-content: space-between;
-  height: 72px;
+
   align-items: center;
+  height: 72px;
 }
 
-/* ul tag */
-nav ul{
-  display:flex;
-  gap:50px;
-  list-style:none}
-
-nav ul li a{
-  text-decoration:none;
-  color:#131212e8;
-  border-bottom:2px solid transparent;
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
 }
 
-nav ul li a:hover{
-  border-bottom:3px solid rgb(194, 15, 15);
+nav ul li a {
+  text-decoration: none;
+  color: #131212e8;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
-/* button */
-button{
+nav ul li a:hover {
+  color: #ff4d4f;
+  border-bottom: 2px solid #ff4d4f;
+}
+
+/* =======================
+   Hero Section
+======================= */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 70px);
+  gap: 40px;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 900;
+
+}
+
+.hero p {
+  margin: 15px 0;
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.hero-btn {
+  display: flex;
+  gap: 20px;
+}
+
+/* =======================
+   Buttons
+======================= */
+button {
   all: unset;
-  padding: 6px 16px;
+  padding: 10px 20px;
   background: var(--red);
-  height: 32px;
-  color: white;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
   font-weight: 500;
 }
 
-.hero{
-  display: flex;
-  align-items: center;
-  height: calc(100vh - 72px);
-}
-
-.hero h1{
-  font-weight: 800;
-  line-height: 102px;
-  font-size:108px;
-}
-
-.hero p{
-  font-weight:600;
-  color: var(--gray);
-}
-
-.hero-btn{
-  display: flex;
-  gap: 40px;
-}
-.sec-btn{
-  background-color: transparent;
-  color: var(--gray);
+.sec-btn {
+  background: transparent;
   border: 1px solid var(--gray);
+  color: var(--gray);
 }
 
-.shopping p{
-font-size: 14px;
-margin-bottom: 8px;
+/* =======================
+   Second Home / Cards
+======================= */
+.second-home {
+  display: flex;
+  gap: 30px; 
+  margin-left: 60px;
+}
+.card {
+ width: 270px;
+ height: 500px;
+ background-color: rgb(223, 223, 217);
+ border-radius: 18px;
 }
 
-/* ************************************************************************************ */
-/* Login page Css */
+.card img {
+  margin: 22px;
+  width: 85%;        /* image fits card width */
+  height: 220px;      /* fixed image height */
+  object-fit: cover; /* crops image, no stretch */
+  border-radius: 20px;
+}
 
-body {
-  margin: 0;
-  height: 100vh;
+.card .text{
+  margin-left: 18px;
+}
+.text .h1{
+ font-size: 23px;
+}
+.text .p{
+ font-size: 17px;
+}
+.card .price{
+  margin-left: 18px;
+  display: flex;
+}
+.card .color{
+  margin-left: 18px;
+  margin-top: 6px;
+}
+
+.card .btn{
+ margin-left: 60px;
+ border-radius: 15px;
+ color: white;
+ width: 100px;
+ text-align: center;
+ background-image: linear-gradient(to right, rgb(54,134,245), rgb(89,0,255));
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* =======================
+   Shopping Text
+======================= */
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* =======================
+   Login Page
+======================= */
+.login-page {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,33 +177,34 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Login container */
+
 .login-container {
   width: 320px;
   padding: 25px;
-  background-color: #ffffff;
+  background: #fff;
   border-radius: 14px;
   text-align: center;
-  border: 2px solid transparent;
+
   box-shadow: 0 10px 30px rgba(238, 28, 28, 0.15);
-  transition: border 0.4s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, border 0.3s ease;
+  border: 2px solid transparent;
 }
 
-/* Border animation on hover */
+
 .login-container:hover {
-  border: 2px solid royalblue;
+  border-color: royalblue;
   transform: translateY(-4px);
 }
 
-/* Heading */
+
 .login-container h2 {
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Input box center & animation */
+
 .input-box {
-  width: 90%;
+  width: 100%;
   padding: 12px;
   margin: 10px 0;
   border-radius: 8px;
@@ -131,29 +214,43 @@ body {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Input focus animation */
+
 .input-box:focus {
   border-color: royalblue;
   box-shadow: 0 0 6px rgba(65, 105, 225, 0.5);
 }
 
-/* Login button */
+
 .login-btn {
-  width: 90%;
+  width: 100%;
   padding: 12px;
   margin-top: 15px;
-  background-color: rgb(4, 8, 230);
-  color: white;
-  font-size: 20px;
+  background: rgb(4, 8, 230);
+  color: #fff;
+  font-size: 18px;
   font-weight: bold;
-  border: none;
+
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Button hover animation */
+
 .login-btn:hover {
   background-color: #1e4fd1;
   transform: scale(1.02);
+}
+
+/* =======================
+   Responsive
+======================= */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
 }

@@ -21,9 +21,11 @@ const Home = () => {
       </nav>
       {/* Add HeroSection below nav */}
       <HeroSection />
-      
+ 
       <SecondHome />
+     
     </>
+
   );
 };
 
