@@ -45,7 +45,7 @@ const SecondHome = () => {
 
       {/* Third- CARD */}
       <div className="card">
-        <img src="/Image/shoes3.jpeg" alt="Shoe" />
+        <img src="/Image/shoesa.jpeg" alt="Shoe" />
         <div className="text">
           <h1>Adidas Sport Shoes</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -65,7 +65,7 @@ const SecondHome = () => {
 
        {/* Four- CARD */}
       <div className="card">
-        <img src="/Image/shoesb.jpeg" alt="Shoe" />
+        <img src="/Image/shoes12.jpeg" alt="Shoe" />
         <div className="text">
           <h1>Adidas Sport Shoes</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>

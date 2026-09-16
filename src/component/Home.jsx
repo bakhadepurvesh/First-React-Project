@@ -23,6 +23,7 @@ const Home = () => {
       <HeroSection />
  
       <SecondHome />
+       <SecondHome />
      
     </>
 

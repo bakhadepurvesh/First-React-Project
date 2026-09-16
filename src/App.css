@@ -114,7 +114,7 @@ button {
 .card {
  width: 270px;
  height: 500px;
- background-color: rgb(223, 223, 217);
+ background-color: rgb(255, 255, 255);
  border-radius: 18px;
 }
 
@@ -169,26 +169,32 @@ button {
    Login Page
 ======================= */
 .login-page {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;             /* full viewport height */
+  display: flex;                 /* enable flexbox */
+  justify-content: center;       /* center horizontally */
+  align-items: center;           /* center vertically */
   background: linear-gradient(135deg, #eef2f7, #fbfdff);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.login-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
 
 .login-container {
-  width: 320px;
+  width: 320px;                  /* container width */
   padding: 25px;
   background: #fff;
   border-radius: 14px;
   text-align: center;
-
+  
   box-shadow: 0 10px 30px rgba(238, 28, 28, 0.15);
   transition: transform 0.3s ease, border 0.3s ease;
   border: 2px solid transparent;
 }
+
 
 
 .login-container:hover {
@@ -222,7 +228,7 @@ button {
 
 
 .login-btn {
-  width: 100%;
+  width: 90%;
   padding: 12px;
   margin-top: 15px;
   background: rgb(4, 8, 230);
